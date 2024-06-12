@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игра Память</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+    <link rel="stylesheet" href="styles/win.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ИГРА ПАМЯТЬ</h1>
+      <nav>
+        <!--<a href="/">КОЛОДЫ</a>
+        <a href="/">О ПРОЕКТЕ</a>-->
+      </nav>
+    </header>
+    <!-- ИЗМЕНЕНИЕ: Эта div будет отображаться, когда игрок выиграет игру! -->
+    <div id="victory">
+      <div id="container">
+        <h1>Поздравляем!</h1>
+        <p>Вы нашли все пары с</p>
+        <h2><span id="movesVictory">0</span> ОШИБКАМИ</h2>
+        <a href="index.html">Играть снова</a>
+      </div>
+    </div>
+    <!-- КОНЕЦ ИЗМЕНЕНИЯ -->
+    <section id="responsive">
+      <h2>Ошибки <span id="movesCount2">0</span></h2>
+      <!--<button id="btn-changeTheme">Сменить тему</button>
+        <button id="btn-restart">Перезапустить</button>-->
+      <a href="index.html">Перезапустить</a>
+    </section>
+
+    <div class="body">
+      <section id="left">
+        <h2>Ошибки <span id="movesCount">0</span></h2>
+        <!--<button id="btn-changeTheme">Сменить тему</button>
+        <button id="btn-restart">Перезапустить</button>-->
+        <a href="index.html">Перезапустить</a>
+      </section>
+      <section class="game">
+        <div class="card" data-name = "frog">
+          <img
+            class="front"
+            src="src/frog.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-name = "frog">
+          <img
+            class="front"
+            src="src/frog.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-name = "cow">
+          <img
+            class="front"
+            src="src/cow.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-name = "cow">
+          <img
+            class="front"
+            src="src/cow.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-name = "kangaroo">
+          <img
+            class="front"
+            src="src/kangaroo.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-name = "kangaroo">
+          <img
+            class="front"
+            src="src/kangaroo.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-name = "lion">
+          <img
+            class="front"
+            src="src/lion.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-name = "lion">
+          <img
+            class="front"
+            src="src/lion.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-name = "bird">
+          <img
+            class="front"
+            src="src/bird.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-name = "bird">
+          <img
+            class="front"
+            src="src/bird.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-name = "elephant">
+          <img
+            class="front"
+            src="src/elephant.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-name = "elephant">
+          <img
+            class="front"
+            src="src/elephant.png"
+            alt="card"
+          />
+          <img
+            class="back"
+            src="src/question-mark.png"
+            alt="card"
+          />
+        </div>
+      </section>
+      <section id="right"></section>
+    </div>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/test.js" defer></script>
+  </body>
+</html>
